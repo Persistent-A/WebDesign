@@ -1,14 +1,28 @@
 * {
     margin: 0;
     padding: 0;
-}
-header{
-
-    padding-top: 20px;
-    padding-bottom: 20px;
-    color: rgb(112, 47, 47);
-    text-align: center;
-    font-size: 15px;
-    font-family: 'Times New Roman', Times, serif;
-
-}
+  }
+  
+  header {
+    color: blue;
+    margin-left: 80px;
+    margin-bottom: 15px;
+  }
+  
+  table.table-main {
+    max-width: 100%;
+  }
+  
+  table {
+    border-collapse: collapse;
+    margin-left: 50px;
+    margin-top: 30px;
+  }
+  
+  th,
+  td {
+    border: 1px solid greenyellow;
+    border-collapse: collapse;
+    padding: 8px;
+  }
+  

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css" />
+    <title>Form</title>
+</head>
+<body>
+    <div class="container">
+        <h3>Feedback</h3>
+        <form id="form">
+            <div class="form-control">
+                <label for="firstname" id ="label-name"> First Name: </label>
+                <input type="text" id="firstname" placeholder="Enter your first name" />
+            </div>
+            <div class="form-control">
+                <label for ="lastname" id ="label-name"> Last Name: </label>
+                <input type="text" id="lastname" placeholder="Enter your last name" />
+            </div>
+            <div class="form-control">
+                <label for="email" id="label-email"> Email: </label>
+                <input type="email" id="email" placeholder="Enter your email" />
+            </div>
+            <div class="form-control">
+                <label for="age" id="label-age">Age:</label>
+                <input type="text" id="age" placeholder="Enter your age" />
+            </div>
+            <label for="comment" class="comment_suggestion">Any comments or suggestions:</label>
+            <textarea name="comment" id="comment" placeholder="Enter your comment here" ></textarea>
+            <div class="form-control">
+                <button class="submit">Submit</button>
+                <button class="reset">Reset</button>
+
+            </div>
+        </form>
+    </div>
+</body>
+</html>
