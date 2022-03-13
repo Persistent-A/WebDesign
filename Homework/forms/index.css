@@ -73,6 +73,7 @@ button{
     padding: 8px 15px;
     border-radius: 5px;
     text-transform: uppercase;
+    border-style:outset;
 }
 
 
