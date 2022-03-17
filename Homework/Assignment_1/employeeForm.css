@@ -1,0 +1,51 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+#container {
+    padding: 10px;
+    margin: 8px;
+    font-size: 20px;
+    line-height: 2;
+    width: 50%;
+    position:absolute; 
+    box-sizing:border-box; 
+}
+
+button:hover{
+    background-color:blueviolet;
+    color:aqua;
+    cursor:pointer;
+}
+
+input {
+    float:right;
+    width: 60%;
+    margin: 10px;
+}
+
+button{
+    padding: 5px;
+    border-style: ridge;
+    border-radius: 3px;
+    float: right;    
+}
+
+#container1{
+    padding:20px;
+    margin-left:55%; 
+    line-height: 2;
+
+}
+
+table, td, tr, th{
+    border: 2px solid black;
+    border-collapse: collapse; 
+    width:400px;
+
+}
+
+
+
+
