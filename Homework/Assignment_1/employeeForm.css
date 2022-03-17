@@ -40,7 +40,7 @@ button{
 }
 
 table, td, tr, th{
-    border: 2px solid black;
+    border: 2px solid rgb(20, 1, 1);
     border-collapse: collapse; 
     width:400px;
 
