@@ -1,11 +1,35 @@
 * {
     padding: 0;
-    margin: 0;
+    margin: 0;    
 }
 
-#container {
-    padding: 10px;
+body {
+    /* padding:200px 10px 200px 10px; */
+    background-image: url("");
+}
+header{
+    /* border: 1px solid red;
+    border-radius: 5px;
+    margin: 0px 80px 0px 80px;
+    object-fit: cover;
+    text-align: center;
+    background-position: center ; */
+    
+}
+
+header{
+    padding:0px 0px 0px 80px;
+}
+
+img{
+    border:1px solid red;
+    border-radius: 5px;
+}
+
+.container {
+    border: 1px solid red;
     margin: 8px;
+    padding:20px;
     font-size: 20px;
     line-height: 2;
     width: 50%;
@@ -29,22 +53,32 @@ button{
     padding: 5px;
     border-style: ridge;
     border-radius: 3px;
-    float: right;    
+    float: right; 
+    width: 100px; 
+    margin: 5px;  
 }
 
 #container1{
+    border: 1px solid red;
+    margin:8px;
     padding:20px;
     margin-left:55%; 
     line-height: 2;
+    font-size: 20px;
 
 }
 
 table, td, tr, th{
+    font-weight: normal;
     border: 2px solid rgb(20, 1, 1);
     border-collapse: collapse; 
-    width:400px;
-
+    width: 100%;
+    table-layout:fixed;
+    overflow: scroll;
 }
+/* thead {
+    font-weight: normal;
+} */
 
 
 
