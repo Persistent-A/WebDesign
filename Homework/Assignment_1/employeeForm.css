@@ -1,24 +1,10 @@
 * {
     padding: 0;
-    margin: 0;    
-}
-
-body {
-    /* padding:200px 10px 200px 10px; */
-    background-image: url("");
-}
-header{
-    /* border: 1px solid red;
-    border-radius: 5px;
-    margin: 0px 80px 0px 80px;
-    object-fit: cover;
-    text-align: center;
-    background-position: center ; */
-    
+    margin: 0;   
 }
 
 header{
-    padding:0px 0px 0px 80px;
+    padding:0px 0px 0px 80px; /* To align image at the center of the webpage.*/
 }
 
 img{
@@ -27,26 +13,27 @@ img{
 }
 
 .container {
+    text-transform: capitalize;   
     border: 1px solid red;
     margin: 8px;
     padding:20px;
     font-size: 20px;
     line-height: 2;
     width: 50%;
-    position:absolute; 
-    box-sizing:border-box; 
+    position: absolute; 
+    box-sizing: border-box; /* The box-size will become equal to the width of the box including padding and border. */
 }
 
 button:hover{
     background-color:blueviolet;
     color:aqua;
-    cursor:pointer;
+    cursor: pointer;
 }
 
 input {
-    float:right;
-    width: 60%;
-    margin: 10px;
+    float: right; /* To align the input field to the right side of its conatiner, to fix same starting positions vertically, for all the inputs. */
+    width: 60%; /* To assign 60% of the container width to the inputs, hence, creating difference between labels and inputs after assigning float:right property. */
+    margin: 10px; /* To provide some distance between all input boxes.*/
 }
 
 button{
@@ -55,17 +42,17 @@ button{
     border-radius: 3px;
     float: right; 
     width: 100px; 
-    margin: 5px;  
+    margin: 5px;
+    text-transform: uppercase;  
 }
 
 #container1{
     border: 1px solid red;
-    margin:8px;
-    padding:20px;
-    margin-left:55%; 
+    margin: 8px;
+    padding: 20px;
+    margin-left: 55%; /* To align the table to the right side of the web page.*/
     line-height: 2;
     font-size: 20px;
-
 }
 
 table, td, tr, th{
@@ -73,14 +60,23 @@ table, td, tr, th{
     border: 2px solid rgb(20, 1, 1);
     border-collapse: collapse; 
     width: 100%;
-    table-layout:fixed;
-    overflow: scroll;
+    table-layout: fixed; /* To assign a fixed width to the table. Under this, cells will use the overflow property.*/
+    overflow: scroll; /* To avoid the overflow of texts beyond the cells, this provides scrolling behaviour within the cells in order to check the whole text.*/
     font-size: 16px;
-    text-align: center;
+    text-align: center; 
 }
-/* thead {
-    font-weight: normal;
-} */
+
+h3, thead{
+    text-transform: capitalize;   
+}
+#tablebody{
+    border: 1px solid blue;
+    max-height: 160px; 
+}
+
+div{
+    overflow: auto; /* To avoid overflow of child elements on shrinking the web page.*/
+}
 
 
 
