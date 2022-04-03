@@ -1,4 +1,11 @@
 //1. Calculate the sum of array of numbers: nums = [10, 40, 50, 60] using reduce() method.
+const num = [10, 40, 50, 60];
+const initialValue = 0;
+const sum = num.reduce((previousValue, currentValue) => {
+    return previousValue + currentValue
+})
+console.log(sum)
+
 
 //2. Create an array of objects as below:
 //  a. iterate through the object,
