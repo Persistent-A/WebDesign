@@ -12,23 +12,27 @@ console.log(sum)
 //  b. display the name of the people on the UI(index.html),
 //  c. whose age is less than or equal to 25.
 
-// let object = [
-//     {
-//         Id: 1,
-//         Name: John,
-//         Age:25
-//     },
-//     {
-//         Id: 2,
-//         Name: Sam,
-//         Age: 28 
-//     },
-//     {
-//         Id: 3,
-//         Name: Sara,
-//         Age: 23
-//     }
-// ]
+let object = [
+    {
+        Id: 1,
+        Name: "John",
+        Age:25
+    },
+    {
+        Id: 2,
+        Name: "Sam",
+        Age: 28 
+    },
+    {
+        Id: 3,
+        Name: "Sara",
+        Age: 23
+    }
+]
+
+object.forEach(function(objects){
+    console.log(objects);
+});
 
 
 
@@ -42,7 +46,6 @@ console.log(result)
 
 //4. Traverse this array of numbers: nums = [10, 40, 50, 60, 5, 23, 24], create new array of elements, 
 //      where each array element when divided by 2, yeilds remainder 0. 
-
 
 //5. Using setTimeout(), Print values from 1 to 5, where each element need to display after 2 seconds of delay.
 //          output:

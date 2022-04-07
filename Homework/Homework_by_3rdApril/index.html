@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homework</title>
+</head>
+<body>
+    <h1>JS Array Methods</h1>
+    <p> <strong>People with age less than or equal to 25:</strong>   </p>
+    
+    <!-- <script src="homework.js"></script> -->
+    <script>
+       const object = [
+            {
+               Id: 1,
+               Name: "John",
+               Age:25
+            },
+            {
+               Id: 2,
+               Name: "Sam",
+               Age: 28 
+            },
+            {
+               Id: 3,
+               Name: "Sara",
+               Age: 23
+            }
+         ]
+         const obj = object.filter(objects => objects.Age <= 25);
+         obj.forEach(function(objects){
+            document.write(`${objects.Name}\n`)
+         })
+    </script>
+
+</body>
+</html>
