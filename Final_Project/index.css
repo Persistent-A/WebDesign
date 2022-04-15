@@ -11,6 +11,8 @@ nav{
     padding: 20px 40px 20px 40px;
     background-color: black;
     color: white;
+    position: sticky;
+    top: 0px;
 }
 .about, .services, .contact{
     /* border:1px solid red; */
@@ -53,6 +55,45 @@ nav{
     text-align:center;
     padding-top: 15px;
     font-family:'Times New Roman', Times, serif;
+}
+.tab{
+    display:flex;
+    justify-content: left;
+    overflow: hidden;
+    border: 1px solid rgb(186, 17, 17);
+    background-color: rgb(123, 116, 116);
+    margin: 20px 170px 20px 170px;
+    
+}
+.tab button{
+    
+    background-color: inherit;
+    float:center;
+    border:none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+}
+.tab button:hover{
+    background-color: rgb(11, 10, 10);
+    color:white;
+}
+.tab button.active{
+    background-color: #ccc;
+    
+}
+.tabcontent{
+    display: none;
+    padding: 6px 12px;
+    border: 1px solid #ccc;
+    border-top: none;
+}
+.para{
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+    text-transform: uppercase;
 }
 
 
