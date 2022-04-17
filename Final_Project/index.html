@@ -39,14 +39,51 @@
         <p>Consists of 3 tabs and respective info for each tab varies. On click of speacific tab, need to display respective information</p>
     </div>
     <p class="para">services</p>
-    <p class="para">products</p>
+    <div class="service">
+        <button class="leftnav"> < </button>
+        <p class="content"> 
+            <!-- <div class="web">-->Web Design.<!--</div>--> Seeker </p>
+        <button class="rightnav"> > </button>
+    </div>
+    
     <p class="para">projects</p>
     <div class="projects">
-        <div id="birdlogo">Bird Logo</div>
-        <div id="emiratesapp">Emirates App</div>
-        <div id="weatherapp">Weather App</div>
+        <div id="birdlogo">
+            <div id="birdtext">bird logo</div>  
+        </div>
+        <div id="emiratesapp">
+            <div id="emiratestext">emirates app</div>
+        </div>
+        <div id="weatherapp">
+            <div id="weathertext">weather app</div>
+
+        </div>
     </div>
     <p class="para">contact</p>
+    <div class="contacts">
+        <form id="form" onsubmit="event.preventDefault() ;">
+            <div class="form-control">
+                <label for="subject" id ="label-name"></label>
+                <input type="text" id="subject" placeholder="subject" />
+            </div>
+            <div class="form-control">
+                <label for ="fullname" id ="label-name"></label>
+                <input type="text" id="fullname" placeholder="full name" />
+            </div>
+            <div class="form-control">
+                <label for="email" id="label-email"></label>
+                <input type="email" id="email" placeholder="e-mail address" />
+            </div>
+            <div class="form-control">
+                <label for="message" class="comment_suggestion"></label>
+                <textarea name="comment" id="message" placeholder="message" ></textarea>
+            </div>
+            <div class="form-control" >
+                <button class="submit">Send</button>
+
+            </div>
+        </form>
+    </div>
  
 </body>
 </html> 
