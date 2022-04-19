@@ -94,12 +94,44 @@ nav{
     text-transform: uppercase;
 }
 .service{
+    background-color: black;
+    color: white;
+    padding: 40px 80px 40px 80px;
+    /* max-width: 100px; */
+    margin: 50px auto;
+    /* padding:10px; */
+    display: grid; 
+    grid-template-columns: 1fr 6fr 1fr; /* (1fr, 1fr, 1fr)it specifies number of columns. we can use px, %, or fractioions. */
+    gap: 5px;
+    
+}
+/* .item{
+    display:flex;
+    justify-content: space-around; 
+    justify-items: center; 
+    border:1px solid red; 
+} */
+
+.item:nth-of-type(1){
+    position: relative;
+    top: 50%;
+    /* font-size:larger; */
+    text-align: center;
+    /* text-align: right; */
+ }
+
+.item:nth-of-type(3){
+    position: relative;
+    top: 50%;
+    text-align: center;
+} 
+/* .service{
     display: flex;
     justify-content: space-around;
     background-color: black;
     color: white;
     padding: 40px 80px 40px 80px;
-}
+} */
 /* .content{
     display:inline-flex;
     justify-content: center;
@@ -132,7 +164,7 @@ nav{
     height: 80vh;
     background-repeat: no-repeat;
     position: relative;
-    background-attachment: local;
+    background-attachment:local;
 }
 
 #emiratesapp{
