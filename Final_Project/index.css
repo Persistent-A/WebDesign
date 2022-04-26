@@ -160,11 +160,11 @@ nav{
     grid-area: birdlogo;
     background-image: url(./images/pexels-artem-podrez-6942655.jpg);
     background-position: center;
-    background-size: cover;
+    background-size:cover;
     height: 80vh;
     background-repeat: no-repeat;
     position: relative;
-    background-attachment:local;
+    /* background-attachment:local; */
 }
 
 #emiratesapp{
@@ -210,20 +210,19 @@ nav{
         "weatherapp";
     }
 }
-.contacts{
-    width: 800px;
+#form{
+    max-width: 50%;
     margin: auto;
-    border:1px solid red;
+    text-align: center;
+  
 }
-.form {
-    margin: 50px auto;
-    font-family: Arial, Helvetica, sans-serif;
+textarea, .btn, input{
+    width:80%;
+    line-height: 40px;
+    margin: 10px;
 }
-.form-control {
-    text-align:center;
-    margin-bottom: 30px;
-    box-sizing: border-box;
-}
+
+
 
 
 
