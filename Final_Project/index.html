@@ -63,24 +63,29 @@
     <h3 class="para">projects</h3>
     <div class="projects">
         <div id="birdlogo">
-            <div id="birdtext">bird logo</div>  
+            <a href="#" id="birdtext">bird logo</a> 
         </div>
         <div id="emiratesapp">
-            <div id="emiratestext">emirates app</div>
+            <a href="#" id="emiratestext">emirates app</a>
         </div>
         <div id="weatherapp">
-            <div id="weathertext">weather app</div>
+            <a href="#" id="weathertext">weather app</a>
 
         </div>
     </div>
     <h3 class="para">contact</h3>
     <div class="contacts">
-        <form id="form" onsubmit="event.preventDefault() ;">
-            <input type="text" class="field" placeholder="Subject">
+        <form id="form" action="https://postmail.invotes.com/send"
+        method="post">
+            <!-- <input type="text" class="field" placeholder="Subject"> -->
+            <input type="text" name="subject" placeholder="Subject" />
 			<input type="text" class="field" placeholder="Full Name">
 			<input type="text" class="field" placeholder="E-mail Address">
-			<textarea placeholder="Message" class="field"></textarea>
-			<button class="btn">Send</button>
+            <textarea name="text" placeholder="Message"></textarea>
+            <input type="hidden" name="access_token" value="pzhrzhhtr2f731rkqds0w7nt" />
+            <input type="hidden" name="success_url" value=".?message=Email+Successfully+Sent%21&isError=0" />
+            <input type="hidden" name="error_url" value=".?message=Email+could+not+be+sent.&isError=1" />   
+			<input id="submit_form" type="submit" value="Send" />
         </form>
     </div>
     <div class="footercontainer">
@@ -108,7 +113,16 @@
             </div>
         </div>
     </div>
+    <script>
+        var submitButton = document.getElementById("submit_form");
+        var form = document.getElementById("form");
+        form.addEventListener("submit", function (e) {
+            setTimeout(function() {
+                submitButton.value = "Sending...";
+                submitButton.disabled = true;
+            }, 1);
+        });
+    </script> 
     
- 
 </body>
 </html> 

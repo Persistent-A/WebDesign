@@ -216,10 +216,19 @@ nav{
     text-align: center;
   
 }
-textarea, .btn, input{
+textarea, #submit_form, input{
     width:80%;
     line-height: 40px;
     margin: 10px;
+}
+#submit_form{
+    padding: 5px;
+    background-color: rgb(93, 188, 232);
+}
+#submit_form:hover{
+    cursor: pointer;
+    font-size: large;
+    color: white;
 }
 .footercontainer{
     background-color: rgb(39, 37, 37);
