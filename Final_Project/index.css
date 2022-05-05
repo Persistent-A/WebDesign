@@ -2,132 +2,103 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    text-decoration: none;
+    list-style: none; 
 }
-/* nav{
-    display: flex;
-    justify-content: space-between;
-    padding: 20px 40px 20px 40px;
-    background-color: black;
-    color: white;
-    position: sticky;
-    top: 0px;
+nav{
+  background: black;
+  height: 80px;
+  width: 100%; 
+  padding: 5px 40px 5px 40px;
+  background-color: black;
+  color: white;
+  position: sticky;
+  top: 0px;
+  z-index: 1;
 }
-.about, .services, .contact{
-    /* border:1px solid red; */
-    /* padding: 0px 10px 0px 10px;
-}*/
-    /* background-color: rgb(40, 38, 38); */
-    /* color:rgb(122, 64, 64)
+label.logo{
+  color: white;
+  font-size: 25px;
+  line-height: 80px;
+  padding: 0 100px;
+  font-weight: bold;
 }
-/*.about:hover, .services:hover, .contact:hover{
-    cursor: pointer;
-    /* background-color: rgb(40, 38, 38); */
-    /* color:rgb(115, 49, 49)
-}  */ 
-/* body{
-    font-family: montserrat;
-  } */
-  nav{
-    /* background: black;*/
-    /* height: 80px; */
-    width: 100%; 
-    /* display: flex;
-    justify-content: space-between; */
-    padding: 10px 40px 10px 40px;
-    background-color: black;
-    color: white;
-    position: sticky;
-    top: 0px;
-  }
+.logo:hover{
+  cursor: pointer;
+  color:#1b9bff;
+}
+nav ul{
+  float: right;
+}
+nav ul li{
+  display: inline-block;
+  line-height: 80px;
+  margin: 0 5px;
+}
+nav ul li .active{  
+  color: white;
+  font-size: 17px;
+  padding: 7px 13px;  
+  border-radius: 3px;
+  text-transform: uppercase;
+}
+.active:hover{
+  background: #1b9bff;
+  transition: .5s;
+  top: 150px;
+  /* color:#1b9bff;  */
+}
+.checkbtn{
+  font-size: 30px;
+  color: white;
+  float: right;
+  line-height: 80px;
+  margin-right: 40px;
+  cursor: pointer;
+  display: none;
+}
+#check{
+  display: none;
+}
+@media (max-width: 1000px){
   label.logo{
-    color: white;
-    font-size: 25px;
-    line-height: 80px;
-    /* margin-left: 30px; */
-    padding: 0 100px;
-    font-weight: bold;
-    /* border: 1px solid red; */
-
-  }
-  .logo:hover{
-    cursor: pointer;
-    color:#1b9bff;
-  }
-  nav ul{
-    float: right;
-    /* margin-right: 20px; */
-  }
-  nav ul li{
-    
-    display: inline-block;
-    line-height: 80px;
-    margin: 0 5px;
+    font-size: 30px;
   }
   nav ul li a{
-    text-decoration: none;
-    list-style: none;
-    color: white;
-    font-size: 17px;
-    padding: 7px 13px;
-    border-radius: 3px;
-    text-transform: uppercase;
+    font-size: 16px;
   }
-  a.active,a:hover{
-    /* background: #1b9bff; */
-    transition: .5s;
-    color:#1b9bff;
-  }
+}
+@media (max-width: 1000px){
   .checkbtn{
-    font-size: 30px;
-    color: white;
-    float: right;
-    line-height: 80px;
-    margin-right: 40px;
-    cursor: pointer;
-    display: none;
+    display: block;
   }
-  #check{
-    display: none;
+  ul{
+    display:block;
+    position: fixed;
+    width: 50%;
+    height: 50vh;
+    background: #2c3e50;
+    top: 80px;
+    right: -100%;
+    text-align: center;
+    transition: all .5s;
   }
-  @media (max-width: 952px){
-    label.logo{
-      font-size: 30px;
-      /* padding-left: 50px; */
-    }
-    nav ul li a{
-      font-size: 16px;
-    }
-  }
-  @media (max-width: 858px){
-    .checkbtn{
-      display: block;
-    }
-    ul{
-      position: fixed;
-      width: 100%;
-      height: 100vh;
-      background: #2c3e50;
-      top: 80px;
-      left: -100%;
-      text-align: center;
-      transition: all .5s;
-    }
-    nav ul li{
-      display: block;
-      margin: 50px 0;
-      line-height: 30px;
-    }
-    nav ul li a{
-      font-size: 20px;
-    }
-    a:hover,a.active{
-      background: none;
-      color: #0082e6;
-    }
-    #check:checked ~ ul{
-      left: 0;
-    }
-  }
+nav ul li{
+  display: block;
+  margin: 50px 0;
+  line-height: 30px;
+} 
+nav ul li a{
+  font-size: 20px;
+}
+a:hover,a.active{
+  background: none;
+  color: #0082e6;
+}
+  #check:checked ~ ul{
+  right: 0;
+}
+}
 .container{
     background-image: url(./images/pexels-suzy-hazelwood-1629236.jpg);
     background-position: top left;
@@ -137,7 +108,6 @@
     height: 700px;
 }
 #name{
-    /* border:1px solid red; */
     color: white;
     width: 50%;
     margin: auto;
@@ -147,7 +117,6 @@
     font-family:'Times New Roman', Times, serif;
 }
 #name1{
-    /* border:1px solid red; */
     color: white;
     width: 50%;
     margin: auto;
@@ -165,10 +134,9 @@
     display: flex;
     justify-content: left;
     overflow: hidden;
-    border: 1px solid rgb(186, 17, 17);
+    border: 1px solid rgb(14, 11, 11);
     background-color: rgb(123, 116, 116);
-    margin: 20px 170px 20px 170px;
-    
+    margin: 20px 170px 0px 170px;  
 }
 .tab button{
     background-color: inherit;
@@ -189,11 +157,14 @@
 }
 .tabcontent{
     display: none;
-    padding: 6px 12px;
-    border: 1px solid #ccc;
-    border-top: none;
+    width: 65%;
+    margin: 0px 170px;
+    padding: 14px 16px;
+    border: 1px solid black;
+    background-color: rgb(15, 13, 13);
+    color: white;
 }
-.para{
+#para, #para1, #para2, #para3{
     display: flex;
     justify-content: center;
     margin: 20px;
@@ -304,18 +275,6 @@
     color: black;
 
 }
-
-@media only screen and (max-width: 858px){
-    .projects{
-        grid-template-columns: 1fr;
-        grid-template-rows: 2fr 2fr 2fr;
-        height: 130vh;
-        grid-template-areas: 
-        "birdlogo"
-        "emiratesapp"
-        "weatherapp";
-    }
-}
 #form{
     max-width: 50%;
     margin: auto;
@@ -344,7 +303,7 @@ textarea, #submit_form, input{
 .footer{
     width: 80%;
     height: 40vh;
-    background-color: rgb(39, 37, 37);
+    /* background-color: rgb(39, 37, 37); */
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -362,30 +321,38 @@ textarea, #submit_form, input{
 .footer1{
     margin-right: 150px;
 }
-.footerheading a{
-    color: #fff;
-    text-decoration: none;
-
+.icon {
+    font-size: 25px;
 }
 
-.fa-instagram, .fa-twitter{
-	background: #0a0b0c;
-	color: #FFFFFF;
-    border: 1px solid #FFFFFF;
-    text-align: center;
-    border-radius: 50%;
-    margin: 5px;
-    padding: 5px
+a {
+    color: white;
 }
-.fa-facebook{
-    background: #0a0b0c;
-	color: #FFFFFF;
-    border: 1px solid #FFFFFF;
-    text-align: center;
-    border-radius: 50%;
-    margin: 5px;
-    padding: 8px
+@media only screen and (max-width: 1000px){
+    .projects{
+        grid-template-columns: 1fr;
+        grid-template-rows: 2fr 2fr 2fr;
+        height: 130vh;
+        grid-template-areas: 
+        "birdlogo"
+        "emiratesapp"
+        "weatherapp";
+    }
 }
+@media only screen and (max-width: 1000px){
+    .contacts{
+        display:grid;
+        grid-template-columns: 1fr;
+        max-width: 50%; 
+        height: 130vh;
+        text-align: center;
+    }    
+}
+
+
+
+
+
 
 
 

@@ -5,8 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="index.css">
-    <!-- <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script> -->
-    <link href="https://netdna.bootstrapcdn.com/font-awesome/4.0.1/css/font-awesome.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/3b8eec32e0.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
     <title>WebDesign</title>
 </head>
@@ -14,47 +14,39 @@
     <nav>
         <input type="checkbox" id="check">
         <label for="check" class="checkbtn">
-          <i class="fas fa-bars"></i>
+          <i href="#" class="fa fa-bars"></i>
         </label>
         <label class="logo">WeDesign</label>
         <ul>
-          <li><a class="" href="#">Home</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Services</a></li>
-          <li><a href="#">Contact</a></li>
+          <li><a class="active" href="#">Home</a></li>
+          <li><a class="active" href="#name1">About</a></li>
+          <li><a class="active" href="#para">Services</a></li>
+          <li><a class="active" href="#para3">Contact</a></li>
         </ul>
-      </nav>
-    <!-- <nav>
-        <div class="name">WeDesign</div>
-        <div>
-            <span class="about">About</span>
-            <span class="services">Services</span>
-            <span class="contact">Contact</span>
-        </div>
-    </nav> -->
+    </nav>
     <div class="container">
         <p id="name" href="#">We are WeDesign!</p>
         <p id="name1" href="#">You dream, we design and build.</p>
     </div>
-    <h3 class="para">about us</h3>
+
+    <div id="para">about us</div>
     <div class="tab">
-        <button class="tablinks" onclick="open(event,'Mission')">Mission</button>
-        <button class="tablinks" onclick="open(event,'Vision')">Vision</button>
-        <button class="tablinks" onclick="open(event,'Values')">Values</button>
+        <button class="tablinks" onclick="openAbout(event,'Mission')">Mission</button>
+        <button class="tablinks" onclick="openAbout(event,'Vision')">Vision</button>
+        <button class="tablinks" onclick="openAbout(event,'Values')">Values</button>
     </div>
-    <div id="Mission" class="tabcontent">
-        <h3>Mission</h3>
-        <p>Consists of 3 tabs and respective info for each tab varies. On click of speacific tab, need to display respective information</p>
+    <div id="Mission" class="tabcontent">   
+        <p>Consists of mission tab and respective info for each tab varies. On click of speacific tab, need to display respective information</p>
     </div>
     <div id="Vision" class="tabcontent">
-        <h3>Vision</h3>
-        <p>Consists of 3 tabs and respective info for each tab varies. On click of speacific tab, need to display respective information</p>
+        <p>Consists of vision tab and respective info for each tab varies. On click of speacific tab, need to display respective information</p>
     </div>
-    <div id="Values" class="tabcontent">
-        <h3>Values</h3>
-        <p>Consists of 3 tabs and respective info for each tab varies. On click of speacific tab, need to display respective information</p>
+    <div id="Values" class="tabcontent">  
+        <p>Consists of values tab and respective info for each tab varies. On click of speacific tab, need to display respective information</p>
     </div>
-    <h3 class="para">services</h3>
+   
+
+    <div id="para1">services</div>
     <div class="service">
         <div class="item">
             <button class="leftnav"> < </button>
@@ -73,7 +65,7 @@
         <!-- <button class="rightnav"> > </button>
     </div> -->
     
-    <h3 class="para">projects</h3>
+    <div id="para2">projects</div>
     <div class="projects">
         <div id="birdlogo">
             <a href="#" id="birdtext">bird logo</a> 
@@ -86,11 +78,10 @@
 
         </div>
     </div>
-    <h3 class="para">contact</h3>
+    <div id="para3">contact</div>
     <div class="contacts">
         <form id="form" action="https://postmail.invotes.com/send"
         method="post">
-            <!-- <input type="text" class="field" placeholder="Subject"> -->
             <input type="text" name="subject" placeholder="Subject" />
 			<input type="text" class="field" placeholder="Full Name">
 			<input type="text" class="field" placeholder="E-mail Address">
@@ -106,9 +97,9 @@
             <div class="footerheading footer1">
                 <h3>Follow us</h3>
                 <div class="icon">
-                    <a href="#" class="fa fa-facebook circle"></a>
-                    <a href="#" class="fa fa-twitter circle"></a>
-                    <a href="#" class="fa fa-instagram circle"></a>
+                    <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="#"><i class="fa fa-twitter"></i></a>
+                    <a href="#"><i class="fa fa-instagram"></i></a>
                 </div>
             </div>
             <div class="footerheading footer2">
@@ -120,22 +111,13 @@
             </div>
             <div class="footerheading footer3">
                 <h3>Opening Timings</h3>
-                <p>Monday: 11:30 - 23:00 </p>
+                <p>Monday: 11:30 - 23:00 
                 <p>Tuesday: 11:00 - 23:00</p>
                 <p>Wednesday: 12:00 - 22:00</p>
             </div>
         </div>
     </div>
-    <script>
-        var submitButton = document.getElementById("submit_form");
-        var form = document.getElementById("form");
-        form.addEventListener("submit", function (e) {
-            setTimeout(function() {
-                submitButton.value = "Sending...";
-                submitButton.disabled = true;
-            }, 1);
-        });
-    </script> 
+<script src="index.js"></script>
     
 </body>
 </html> 
