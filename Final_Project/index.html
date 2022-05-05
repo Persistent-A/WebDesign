@@ -11,7 +11,7 @@
     <title>WebDesign</title>
 </head>
 <body>
-    <nav>
+    <nav class="navbar">
         <input type="checkbox" id="check">
         <label for="check" class="checkbtn">
           <i href="#" class="fa fa-bars"></i>
@@ -24,62 +24,62 @@
           <li><a class="active" href="#para3">Contact</a></li>
         </ul>
     </nav>
+     
     <div class="container">
         <p id="name" href="#">We are WeDesign!</p>
         <p id="name1" href="#">You dream, we design and build.</p>
     </div>
 
-    <div id="para">about us</div>
-    <div class="tab">
-        <button class="tablinks" onclick="openAbout(event,'Mission')">Mission</button>
-        <button class="tablinks" onclick="openAbout(event,'Vision')">Vision</button>
-        <button class="tablinks" onclick="openAbout(event,'Values')">Values</button>
-    </div>
-    <div id="Mission" class="tabcontent">   
-        <p>Consists of mission tab and respective info for each tab varies. On click of speacific tab, need to display respective information</p>
-    </div>
-    <div id="Vision" class="tabcontent">
-        <p>Consists of vision tab and respective info for each tab varies. On click of speacific tab, need to display respective information</p>
-    </div>
-    <div id="Values" class="tabcontent">  
-        <p>Consists of values tab and respective info for each tab varies. On click of speacific tab, need to display respective information</p>
+    <div id="about_us">
+        <div id="para">about us</div>
+        <div class="tab">
+            <button class="tablinks" onclick="openAbout(event,'Mission')">Mission</button>
+            <button class="tablinks" onclick="openAbout(event,'Vision')">Vision</button>
+            <button class="tablinks" onclick="openAbout(event,'Values')">Values</button>
+        </div>
+        <div id="Mission" class="tabcontent">   
+            <p>Consists of mission tab and respective info for each tab varies. On click of speacific tab, need to display respective information</p>
+        </div>
+        <div id="Vision" class="tabcontent">
+            <p>Consists of vision tab and respective info for each tab varies. On click of speacific tab, need to display respective information</p>
+        </div>
+        <div id="Values" class="tabcontent">  
+            <p>Consists of values tab and respective info for each tab varies. On click of speacific tab, need to display respective information</p>
+        </div>
     </div>
    
+    <div class="services_">
+        <div id="para1">services</div>
+        <div class="service">
+            <div class="item">
+                <button class="leftnav"> &lt; </button>
+            </div>
+            <div class="item"> We Design. Web design encompasses many different skills and disciplines in the production and maintenance of websites. The different areas of web design include web graphic design; user interface design (UI design); authoring, including standardised code and proprietary software; user experience design (UX design); and search engine optimization. Often many individuals will work in teams covering different aspects of the design process, although some designers will cover them all.[1] The term "web design" is normally used to describe the design process relating to the front-end (client side) design of a website including writing markup. Web design partially overlaps web engineering in the broader scope of web development. Web designers are expected to have an awareness of usability and if their role involves creating markup then they are also expected to be up to date with web accessibility guidelines.
 
-    <div id="para1">services</div>
-    <div class="service">
-        <div class="item">
-            <button class="leftnav"> < </button>
-        </div>
-        <div class="item"> We Design. Web design encompasses many different skills and disciplines in the production and maintenance of websites. The different areas of web design include web graphic design; user interface design (UI design); authoring, including standardised code and proprietary software; user experience design (UX design); and search engine optimization. Often many individuals will work in teams covering different aspects of the design process, although some designers will cover them all.[1] The term "web design" is normally used to describe the design process relating to the front-end (client side) design of a website including writing markup. Web design partially overlaps web engineering in the broader scope of web development. Web designers are expected to have an awareness of usability and if their role involves creating markup then they are also expected to be up to date with web accessibility guidelines.
-
-        </div>
-        <div class="item">
-            <button class="rightnav"> > </button>
+            </div>
+            <div class="item">
+                <button class="rightnav">&gt;</button>
+            </div>
         </div>
     </div>
-    <!-- <div class="service">
-        <button class="leftnav"> < </button>
-        <p class="content"> 
-             <div class="web">Web Design.</div> Wikipedia has received praise for its enablement of the democratization of knowledge, extent of coverage, unique structure, culture, and reduced amount of commercial bias, but criticism for exhibiting systemic bias, particularly gender bias against women and alleged ideological bias.[13][14] Its reliability was frequently criticized in the 2000s but has improved over time; it has been generally praised in the late 2010s and early 2020s. </p> -->
-        <!-- <button class="rightnav"> > </button>
-    </div> -->
     
-    <div id="para2">projects</div>
-    <div class="projects">
-        <div id="birdlogo">
-            <a href="#" id="birdtext">bird logo</a> 
-        </div>
-        <div id="emiratesapp">
-            <a href="#" id="emiratestext">emirates app</a>
-        </div>
-        <div id="weatherapp">
-            <a href="#" id="weathertext">weather app</a>
-
+    <div class="projects_">
+        <div id="para2">projects</div>
+        <div class="projects">
+            <div id="birdlogo">
+                <a href="#" id="birdtext">bird logo</a> 
+            </div>
+            <div id="emiratesapp">
+                <a href="#" id="emiratestext">emirates app</a>
+            </div>
+            <div id="weatherapp">
+                <a href="#" id="weathertext">weather app</a>
+            </div>
         </div>
     </div>
-    <div id="para3">contact</div>
+
     <div class="contacts">
+        <h3 id="para3">contact</h3>
         <form id="form" action="https://postmail.invotes.com/send"
         method="post">
             <input type="text" name="subject" placeholder="Subject" />
@@ -92,6 +92,7 @@
 			<input id="submit_form" type="submit" value="Send" />
         </form>
     </div>
+
     <div class="footercontainer">
         <div class="footer">
             <div class="footerheading footer1">
@@ -103,11 +104,13 @@
                 </div>
             </div>
             <div class="footerheading footer2">
-                <h3>Location</h3>
-                <p>Av.Crese</p>
-                <p>T. 314-987-698</p>
-                <p>Montreal, Qc.</p>
-                <p>contact@webdesign.com.hr</p>
+                <div class="location">
+                    <h3>Location</h3>
+                    <p>Av.Crese</p>
+                    <p>T. 314-987-698</p>
+                    <p>Montreal, Qc.</p>
+                    <p>contact@webdesign.com.hr</p>
+                </div>     
             </div>
             <div class="footerheading footer3">
                 <h3>Opening Timings</h3>
@@ -117,7 +120,8 @@
             </div>
         </div>
     </div>
-<script src="index.js"></script>
+
+    <script src="index.js"></script>
     
 </body>
 </html> 

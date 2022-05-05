@@ -60,45 +60,7 @@ nav ul li .active{
 #check{
   display: none;
 }
-@media (max-width: 1000px){
-  label.logo{
-    font-size: 30px;
-  }
-  nav ul li a{
-    font-size: 16px;
-  }
-}
-@media (max-width: 1000px){
-  .checkbtn{
-    display: block;
-  }
-  ul{
-    display:block;
-    position: fixed;
-    width: 50%;
-    height: 50vh;
-    background: #2c3e50;
-    top: 80px;
-    right: -100%;
-    text-align: center;
-    transition: all .5s;
-  }
-nav ul li{
-  display: block;
-  margin: 50px 0;
-  line-height: 30px;
-} 
-nav ul li a{
-  font-size: 20px;
-}
-a:hover,a.active{
-  background: none;
-  color: #0082e6;
-}
-  #check:checked ~ ul{
-  right: 0;
-}
-}
+
 .container{
     background-image: url(./images/pexels-suzy-hazelwood-1629236.jpg);
     background-position: top left;
@@ -182,12 +144,6 @@ a:hover,a.active{
     gap: 5px;
     
 }
-/* .item{
-    display:flex;
-    justify-content: space-around; 
-    justify-items: center; 
-    border:1px solid red; 
-} */
 
 .item:nth-of-type(1){
     position: relative;
@@ -202,20 +158,7 @@ a:hover,a.active{
     top: 50%;
     text-align: center;
 } 
-/* .service{
-    display: flex;
-    justify-content: space-around;
-    background-color: black;
-    color: white;
-    padding: 40px 80px 40px 80px;
-} */
-/* .content{
-    display:inline-flex;
-    justify-content: center;
-}
-.web{
-    color: yellow;
-} */
+
 .leftnav, .rightnav{
     background-color: black;
     color: white;
@@ -233,7 +176,6 @@ a:hover,a.active{
     
 }
 #birdlogo{
-    /* background: rgb(149, 136, 136); */
     grid-area: birdlogo;
     background-image: url(./images/pexels-artem-podrez-6942655.jpg);
     background-position: center;
@@ -241,7 +183,6 @@ a:hover,a.active{
     height: 80vh;
     background-repeat: no-repeat;
     position: relative;
-    /* background-attachment:local; */
 }
 
 #emiratesapp{
@@ -275,11 +216,35 @@ a:hover,a.active{
     color: black;
 
 }
+@media only screen and (max-width: 1000px){
+    .projects{
+        grid-template-columns: 1fr;
+        grid-template-rows: 2fr 2fr 2fr;
+        height: 130vh;
+        grid-template-areas: 
+        "birdlogo"
+        "emiratesapp"
+        "weatherapp";
+    }
+}
+
+.contacts{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.4fr 1fr;
+    grid-template-areas:
+    "para3"
+    "form";
+
+}
+#para3{
+    grid-area: para3;   
+}
 #form{
+    grid-area: form;
     max-width: 50%;
     margin: auto;
     text-align: center;
-  
 }
 textarea, #submit_form, input{
     width:80%;
@@ -295,31 +260,42 @@ textarea, #submit_form, input{
     font-size: large;
     color: white;
 }
-.footercontainer{
-    background-color: rgb(39, 37, 37);
-    color:#fff;
-    padding : 20px 40px 20px 40px;
+
+@media only screen and (max-width: 1000px){
+    .contacts{
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.4fr 1fr;
+        margin-top: 800px;
+        grid-template-areas:
+        "para3"
+        "form";
+    }    
 }
+
 .footer{
-    width: 80%;
-    height: 40vh;
-    /* background-color: rgb(39, 37, 37); */
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    margin: 0 auto;
-}
-.footerheading{
-    display: flex;
-    flex-direction: column;
-    margin-right: 80px;
-    line-height: 30px;
-}
-.footer h3{
-    margin-bottom: 20px ;
+    display: grid;
+    height: 30vh;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: 
+    "footer1 footer2 footer3";
+    grid-gap: 0.5rem;
+    max-width: 100%;
+    margin: auto;
+    background-color: rgb(25, 24, 24);
+    color: #fff;
+    line-height: 50px;
 }
 .footer1{
-    margin-right: 150px;
+    grid-area: footer1;
+    text-align: end;
+}
+.footer2{
+    grid-area: footer2;
+    text-align: center;
+}
+.footer3{
+    grid-area: footer3;
+    
 }
 .icon {
     font-size: 25px;
@@ -327,26 +303,62 @@ textarea, #submit_form, input{
 
 a {
     color: white;
-}
+} 
 @media only screen and (max-width: 1000px){
-    .projects{
-        grid-template-columns: 1fr;
-        grid-template-rows: 2fr 2fr 2fr;
-        height: 130vh;
-        grid-template-areas: 
-        "birdlogo"
-        "emiratesapp"
-        "weatherapp";
+    .footer{
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr;
+        height: 30vh;
+        grid-template-areas:
+        "footer1 footer2 footer3";
+
     }
 }
+
 @media only screen and (max-width: 1000px){
-    .contacts{
-        display:grid;
-        grid-template-columns: 1fr;
-        max-width: 50%; 
-        height: 130vh;
+    label.logo{
+      font-size: 30px;
+    }
+    nav ul li a{
+      font-size: 16px;
+    }
+}
+
+@media only screen and (max-width: 1000px){
+    .checkbtn {
+        display: block;
+    }
+
+    ul {
+        display:block;
+        position: fixed;
+        width: 50%;
+        height: 100vh;
+        background: #2c3e50;
+        top: 80px;
+        right: -100%;
         text-align: center;
-    }    
+        transition: all .5s;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    } 
+
+    nav ul li a {
+        font-size: 20px;
+    }
+
+    a:hover,a.active {
+        background: none;
+        color: #0082e6;
+    }
+
+    #check:checked ~ ul {
+        right: 0;
+    }
 }
 
 
