@@ -271,7 +271,14 @@ textarea, #submit_form, input{
         "form";
     }    
 }
-
+footer{
+    width: 100%;
+    margin:auto;
+    text-align: center;
+    background-color: black;
+    color: white;
+    line-height: 50px;
+}
 .footer{
     display: grid;
     height: 30vh;
@@ -295,6 +302,7 @@ textarea, #submit_form, input{
 }
 .footer3{
     grid-area: footer3;
+    text-align: left;
     
 }
 .icon {
@@ -304,6 +312,9 @@ textarea, #submit_form, input{
 a {
     color: white;
 } 
+.location{
+    line-height: 25spx;
+}
 @media only screen and (max-width: 1000px){
     .footer{
         grid-template-columns: 1fr 1fr 1fr;
