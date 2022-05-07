@@ -5,60 +5,66 @@
     text-decoration: none;
     list-style: none; 
 }
+html{
+    scroll-behavior: smooth;
+}
 nav{
-  background: black;
-  height: 80px;
-  width: 100%; 
-  padding: 5px 40px 5px 40px;
-  background-color: black;
-  color: white;
-  position: sticky;
-  top: 0px;
-  z-index: 1;
+    background: black;
+    height: 80px;
+    width: 100%; 
+    padding: 5px 40px 5px 40px;
+    background-color: black;
+    color: white;
+    position: sticky;
+    top: 0px;
+    z-index: 1;
 }
 label.logo{
-  color: white;
-  font-size: 25px;
-  line-height: 80px;
-  padding: 0 100px;
-  font-weight: bold;
+    color: white;
+    font-size: 25px;
+    line-height: 80px;
+    padding: 0 80px;
+    font-weight: bold;
 }
 .logo:hover{
-  cursor: pointer;
-  color:#1b9bff;
+    cursor: pointer;
+    color:#1b9bff;
 }
 nav ul{
-  float: right;
+    float: right;
 }
 nav ul li{
-  display: inline-block;
-  line-height: 80px;
-  margin: 0 5px;
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
 }
 nav ul li .active{  
-  color: white;
-  font-size: 17px;
-  padding: 7px 13px;  
-  border-radius: 3px;
-  text-transform: uppercase;
+    color: white;
+    font-size: 17px;
+    padding: 7px 13px;  
+    border-radius: 3px;
+    text-transform: uppercase;
 }
 .active:hover{
-  background: #1b9bff;
-  transition: .5s;
-  top: 150px;
-  /* color:#1b9bff;  */
+    background: #1b9bff;
+    transition: .5s;
+    top: 150px;
 }
 .checkbtn{
-  font-size: 30px;
-  color: white;
-  float: right;
-  line-height: 80px;
-  margin-right: 40px;
-  cursor: pointer;
-  display: none;
+    font-size: 30px;
+    color: white;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
 }
 #check{
-  display: none;
+    display: none;
+}
+
+.fa-spinner{
+    color: red;
 }
 
 .container{
@@ -71,6 +77,7 @@ nav ul li .active{
 }
 #name{
     color: white;
+    height: 350px;
     width: 50%;
     margin: auto;
     padding-top: 310px;
@@ -84,7 +91,7 @@ nav ul li .active{
     margin: auto;
     font-size: large;
     text-align: center;
-    padding-top: 15px;
+    padding-top: 10px;
     font-family: 'Times New Roman', Times, serif;
 }
 #name:hover, #name1:hover{
@@ -115,7 +122,6 @@ nav ul li .active{
 }
 .tab button.active{
     background-color: #ccc;
-    
 }
 .tabcontent{
     display: none;
@@ -142,15 +148,12 @@ nav ul li .active{
     display: grid; 
     grid-template-columns: 1fr 6fr 1fr; /* (1fr, 1fr, 1fr)it specifies number of columns. we can use px, %, or fractioions. */
     gap: 5px;
-    
 }
 
 .item:nth-of-type(1){
     position: relative;
     top: 50%;
-    /* font-size:larger; */
     text-align: center;
-    /* text-align: right; */
  }
 
 .item:nth-of-type(3){
@@ -173,34 +176,39 @@ nav ul li .active{
     max-width: 100%;
     width: 1300px;
     margin: auto;
-    
 }
-#birdlogo{
+#birdlogo a{
+    display: block;
     grid-area: birdlogo;
     background-image: url(./images/pexels-artem-podrez-6942655.jpg);
     background-position: center;
     background-size:cover;
     height: 80vh;
+    top: 0%;
     background-repeat: no-repeat;
     position: relative;
 }
 
-#emiratesapp{
+#emiratesapp a{
+    display: block;
     grid-area: emiratesapp;
     background-image: url(./images/pexels-photomix-company-887751.jpg);
     background-position: center;
     background-size: cover;
     height: 80vh;
+    top: 0;
     background-repeat: no-repeat;
     position: relative;
     background-attachment: local;
 }
-#weatherapp{
+#weatherapp a{
+    display:block;
     grid-area: weatherapp;
     background-image: url(./images/pexels-daria-shevtsova-1440727.jpg);
     background-position: center;
     background-size: cover;
     height: 80vh;
+    top: 0;
     background-repeat: no-repeat;
     position: relative;
     background-attachment: local;
@@ -214,7 +222,6 @@ nav ul li .active{
     text-transform: capitalize;
     font-size: 15px;
     color: black;
-
 }
 @media only screen and (max-width: 1000px){
     .projects{
@@ -235,7 +242,6 @@ nav ul li .active{
     grid-template-areas:
     "para3"
     "form";
-
 }
 #para3{
     grid-area: para3;   
@@ -303,17 +309,17 @@ footer{
 .footer3{
     grid-area: footer3;
     text-align: left;
-    
 }
 .icon {
     font-size: 25px;
 }
 
-a {
+a{
     color: white;
 } 
 .location{
-    line-height: 25spx;
+    line-height: 25px;
+    font-size: small;
 }
 @media only screen and (max-width: 1000px){
     .footer{
@@ -322,16 +328,15 @@ a {
         height: 30vh;
         grid-template-areas:
         "footer1 footer2 footer3";
-
     }
 }
 
 @media only screen and (max-width: 1000px){
     label.logo{
-      font-size: 30px;
+        font-size: 30px;
     }
     nav ul li a{
-      font-size: 16px;
+        font-size: 16px;
     }
 }
 
@@ -339,7 +344,6 @@ a {
     .checkbtn {
         display: block;
     }
-
     ul {
         display:block;
         position: fixed;
@@ -351,22 +355,18 @@ a {
         text-align: center;
         transition: all .5s;
     }
-
     nav ul li {
         display: block;
         margin: 50px 0;
         line-height: 30px;
     } 
-
     nav ul li a {
         font-size: 20px;
     }
-
     a:hover,a.active {
         background: none;
         color: #0082e6;
     }
-
     #check:checked ~ ul {
         right: 0;
     }

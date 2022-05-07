@@ -16,7 +16,9 @@
         <label for="check" class="checkbtn">
           <i href="#" class="fa fa-bars"></i>
         </label>
-        <label class="logo">WeDesign</label>
+        <a href="#">
+            <label class="logo">
+                <i class="fa fa-spinner fa-flip-vertical" aria-hidden="true"></i>WeDesign</label></a>
         <ul>
           <li><a class="active" href="#">Home</a></li>
           <li><a class="active" href="#name1">About</a></li>
@@ -54,8 +56,15 @@
             <div class="item">
                 <button class="leftnav"> &lt; </button>
             </div>
-            <div class="item"> We Design. Web design encompasses many different skills and disciplines in the production and maintenance of websites. The different areas of web design include web graphic design; user interface design (UI design); authoring, including standardised code and proprietary software; user experience design (UX design); and search engine optimization. Often many individuals will work in teams covering different aspects of the design process, although some designers will cover them all.[1] The term "web design" is normally used to describe the design process relating to the front-end (client side) design of a website including writing markup. Web design partially overlaps web engineering in the broader scope of web development. Web designers are expected to have an awareness of usability and if their role involves creating markup then they are also expected to be up to date with web accessibility guidelines.
-
+            <div class="item"> <p>We Design. Web design encompasses many different skills and disciplines in the production 
+                and maintenance of websites. The different areas of web design include web graphic design; 
+                user interface design (UI design); authoring, including standardised code and proprietary software; 
+                user experience design (UX design); and search engine optimization. Often many individuals will work in teams 
+                covering different aspects of the design process, although some designers will cover them all.
+                [1] The term "web design" is normally used to describe the design process relating to the front-end 
+                (client side) design of a website including writing markup. Web design partially overlaps web engineering 
+                in the broader scope of web development. Web designers are expected to have an awareness of usability and if their 
+                role involves creating markup then they are also expected to be up to date with web accessibility guidelines.</p>
             </div>
             <div class="item">
                 <button class="rightnav">&gt;</button>
@@ -67,13 +76,19 @@
         <div id="para2">projects</div>
         <div class="projects">
             <div id="birdlogo">
-                <a href="#" id="birdtext">bird logo</a> 
+                <a href="#">
+                    <p id="birdtext">bird logo</p>
+                </a> 
             </div>
             <div id="emiratesapp">
-                <a href="#" id="emiratestext">emirates app</a>
+                <a href="#">
+                    <p id="emiratestext">emirates app</p>
+                </a>
             </div>
             <div id="weatherapp">
-                <a href="#" id="weathertext">weather app</a>
+                <a href="#">
+                    <p id="weathertext">weather app</p>
+                </a>
             </div>
         </div>
     </div>
@@ -82,10 +97,10 @@
         <h3 id="para3">contact</h3>
         <form id="form" action="https://postmail.invotes.com/send"
         method="post">
-            <input type="text" name="subject" placeholder="Subject" />
-			<input type="text" class="field" placeholder="Full Name">
-			<input type="text" class="field" placeholder="E-mail Address">
-            <textarea name="text" placeholder="Message"></textarea>
+            <input type="text" name="subject" placeholder="Subject" required/>
+			<input type="text" class="field" placeholder="Full Name" required>
+			<input type="email" class="field" placeholder="E-mail Address" required>
+            <textarea name="text" placeholder="Message" required></textarea>
             <input type="hidden" name="access_token" value="pzhrzhhtr2f731rkqds0w7nt" />
             <input type="hidden" name="success_url" value=".?message=Email+Successfully+Sent%21&isError=0" />
             <input type="hidden" name="error_url" value=".?message=Email+could+not+be+sent.&isError=1" />   
@@ -106,10 +121,10 @@
             <div class="footerheading footer2">
                 <h3>Location</h3>
                 <div class="location">
-                    <p>Av.Crese</p>
-                    <p>T. 314-987-698</p>
-                    <p>Montreal, Qc.</p>
-                    
+                    <a href="https://www.google.com/maps/dir/45.5125128,-73.6133979/tav+college/@45.5003233,-73.645619,14z/data=!3m1!4b1!4m9!4m8!1m1!4e1!1m5!1m1!1s0x4cc919deffd38fa7:0x2572105e7bf86853!2m2!1d-73.6431749!2d45.490253"><p>6333 Decarie Blvd, 
+                        Montreal, Quebec H3W 3E1
+                        </p></a>
+                    <a href="#"><p>contact@webdesign.com.hr</p></a>
                 </div>     
             </div>
             <div class="footerheading footer3">
@@ -122,7 +137,7 @@
             </div>
         </div>
         <hr>
-            <p>contact@webdesign.com.hr</p>
+            <h5>2022 &copy; All right reserved</h5>
     </footer>
 
     <script src="index.js"></script>
