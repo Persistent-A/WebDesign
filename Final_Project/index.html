@@ -7,37 +7,39 @@
     <link rel="stylesheet" href="index.css">
     <script src="https://kit.fontawesome.com/3b8eec32e0.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+
     <title>WebDesign</title>
 </head>
 <body>
-    <nav class="navbar">
+    <nav class="navbar">  <!-- Keeping the nav block in nav -->
         <input type="checkbox" id="check">
-        <label for="check" class="checkbtn">
-          <i href="#" class="fa fa-bars"></i>
+        <label for="check" class="checkbtn"> 
+          <i href="#" class="fa fa-bars"></i> <!-- Used fontawesome to import bars to make hamburger menu -->
         </label>
-        <a href="#">
+        <a href="#"> <!-- href="#" redirects to the same link when click on the associated font/icon/etc. -->
             <label class="logo">
-                <i class="fa fa-spinner fa-flip-vertical" aria-hidden="true"></i>WeDesign</label></a>
+                <i class="fa fa-spinner fa-flip-vertical" aria-hidden="true"></i>WeDesign</label></a> <!-- Added logo beside the "WeDesign"-->
+        <!-- Adding menu in the nav block as a list -->       
         <ul>
-          <li><a class="active" href="#">Home</a></li>
+          <li><a class="active" href="#">Home</a></li> 
           <li><a class="active" href="#name1">About</a></li>
           <li><a class="active" href="#para">Services</a></li>
           <li><a class="active" href="#para3">Contact</a></li>
         </ul>
     </nav>
-     
+    <!-- To write on the image in phase 1 -->
     <div class="container">
         <p id="name" href="#">We are WeDesign!</p>
         <p id="name1" href="#">You dream, we design and build.</p>
     </div>
-
+    <!-- Creating the about us section where three buttons are used and added an event "onclick" which uses 
+    function "openAbout()" to execute the content. -->
     <div id="about_us">
         <div id="para">about us</div>
         <div class="tab">
-            <button class="tablinks" onclick="openAbout(event,'Mission')">Mission</button>
-            <button class="tablinks" onclick="openAbout(event,'Vision')">Vision</button>
-            <button class="tablinks" onclick="openAbout(event,'Values')">Values</button>
+            <button class="tablinks" id="defaultOpen">Mission</button>
+            <button class="tablinks">Vision</button>
+            <button class="tablinks">Values</button>
         </div>
         <div id="Mission" class="tabcontent">   
             <p>Consists of mission tab and respective info for each tab varies. On click of speacific tab, need to display respective information</p>
@@ -49,7 +51,7 @@
             <p>Consists of values tab and respective info for each tab varies. On click of speacific tab, need to display respective information</p>
         </div>
     </div>
-   
+   <!-- Creating the services section -->
     <div class="services_">
         <div id="para1">services</div>
         <section aria-label="New content">
@@ -62,7 +64,7 @@
             </div>
         </section>
     </div>
-    
+    <!-- Creating the projects section -->
     <div class="projects_">
         <div id="para2">projects</div>
         <div class="projects">
@@ -127,7 +129,7 @@
                 </div>
             </div>
         </div>
-        <hr>
+        <hr> <!-- To provide a horizontal rule -->
             <h5>2022 &copy; All right reserved</h5>
     </footer>
 
